@@ -13,6 +13,9 @@
 #include "utils.h"
 #include "Givemeahand.h"
 
+#include <wil/resource.h>
+#include <wil/win32_helpers.h>
+
 using fNtQuerySystemInformation = NTSTATUS(WINAPI*)(
 	ULONG SystemInformationClass,
 	PVOID SystemInformation,
